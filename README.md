@@ -1,6 +1,6 @@
 # Stock Price Prediction using Linear Regression
 
-A simple yet effective stock price predictor that learns from historical OHLCV data to forecast next-day closing prices.
+A simple stock price predictor that learns from historical OHLCV data to forecast next-day closing prices.
 
 ## Overview
 
@@ -38,7 +38,7 @@ The project plots actual versus predicted prices and includes error visualizatio
 Run the script from the command line:
 
 ```bash
-python price_prediction.py path/to/data.csv
+python3 SamplePred.py path/to/data.csv
 ```
 
 ### Expected input
@@ -73,8 +73,9 @@ Potential next steps for improving the project include:
 - Ensemble models such as Random Forest or XGBoost to capture non-linear relationships.
 - Walk-forward validation for more realistic performance tracking over time.
 - Multi-stock training to improve generalization.
+- Adding a custom loss function to prevent "following/delayed predictions" (as seen on zoomed picture)
 - A classification version that predicts price direction (up or down) instead of exact closing price.
 
 ## Notes
 
-This project is intended as an educational and analytical baseline rather than a production-grade trading system. Market prices are noisy, non-stationary, and influenced by many external factors that a simple linear model cannot fully capture.
+This project is intended as an educational and analytical baseline only. 
